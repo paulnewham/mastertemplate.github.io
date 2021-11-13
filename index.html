@@ -1,98 +1,377 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head> 
-<title>IIS 10.0 Detailed Error - 404.0 - Not Found</title> 
-<style type="text/css"> 
-<!-- 
-body{margin:0;font-size:.7em;font-family:Verdana,Arial,Helvetica,sans-serif;} 
-code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
-.config_source code{font-size:.8em;color:#000000;} 
-pre{margin:0;font-size:1.4em;word-wrap:break-word;} 
-ul,ol{margin:10px 0 10px 5px;} 
-ul.first,ol.first{margin-top:5px;} 
-fieldset{padding:0 15px 10px 15px;word-break:break-all;} 
-.summary-container fieldset{padding-bottom:5px;margin-top:4px;} 
-legend.no-expand-all{padding:2px 15px 4px 10px;margin:0 0 0 -12px;} 
-legend{color:#333333;;margin:4px 0 8px -12px;_margin-top:0px; 
-font-weight:bold;font-size:1em;} 
-a:link,a:visited{color:#007EFF;font-weight:bold;} 
-a:hover{text-decoration:none;} 
-h1{font-size:2.4em;margin:0;color:#FFF;} 
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.4em;margin:10px 0 0 0;color:#CC0000;} 
-h4{font-size:1.2em;margin:10px 0 5px 0; 
-}#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS",Verdana,sans-serif; 
- color:#FFF;background-color:#5C87B2; 
-}#content{margin:0 0 0 2%;position:relative;} 
-.summary-container,.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;} 
-.content-container p{margin:0 0 10px 0; 
-}#details-left{width:35%;float:left;margin-right:2%; 
-}#details-right{width:63%;float:left;overflow:hidden; 
-}#server_version{width:96%;_height:1px;min-height:1px;margin:0 0 5px 0;padding:11px 2% 8px 2%;color:#FFFFFF; 
- background-color:#5A7FA5;border-bottom:1px solid #C1CFDD;border-top:1px solid #4A6C8E;font-weight:normal; 
- font-size:1em;color:#FFF;text-align:right; 
-}#server_version p{margin:5px 0;} 
-table{margin:4px 0 4px 0;width:100%;border:none;} 
-td,th{vertical-align:top;padding:3px 0;text-align:left;font-weight:normal;border:none;} 
-th{width:30%;text-align:right;padding-right:2%;font-weight:bold;} 
-thead th{background-color:#ebebeb;width:25%; 
-}#details-right th{width:20%;} 
-table tr.alt td,table tr.alt th{} 
-.highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
-.clear{clear:both;} 
-.preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
---> 
-</style> 
- 
-</head> 
-<body> 
-<div id="content"> 
-<div class="content-container"> 
-  <h3>HTTP Error 404.0 - Not Found</h3> 
-  <h4>The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.</h4> 
-</div> 
-<div class="content-container"> 
- <fieldset><h4>Most likely causes:</h4> 
-  <ul> 	<li>The directory or file specified does not exist on the Web server.</li> 	<li>The URL contains a typographical error.</li> 	<li>A custom filter or module, such as URLScan, restricts access to the file.</li> </ul> 
- </fieldset> 
-</div> 
-<div class="content-container"> 
- <fieldset><h4>Things you can try:</h4> 
-  <ul> 	<li>Create the content on the Web server.</li> 	<li>Review the browser URL.</li> 	<li>Create a tracing rule to track failed requests for this HTTP status code and see which module is calling SetStatus. For more information about creating a tracing rule for failed requests, click <a href="http://go.microsoft.com/fwlink/?LinkID=66439">here</a>. </li> </ul> 
- </fieldset> 
-</div> 
- 
-<div class="content-container"> 
- <fieldset><h4>Detailed Error Information:</h4> 
-  <div id="details-left"> 
-   <table border="0" cellpadding="0" cellspacing="0"> 
-    <tr class="alt"><th>Module</th><td>&nbsp;&nbsp;&nbsp;IIS Web Core</td></tr> 
-    <tr><th>Notification</th><td>&nbsp;&nbsp;&nbsp;MapRequestHandler</td></tr> 
-    <tr class="alt"><th>Handler</th><td>&nbsp;&nbsp;&nbsp;SSINC-shtml</td></tr> 
-    <tr><th>Error Code</th><td>&nbsp;&nbsp;&nbsp;0x80070002</td></tr> 
-     
-   </table> 
-  </div> 
-  <div id="details-right"> 
-   <table border="0" cellpadding="0" cellspacing="0"> 
-    <tr class="alt"><th>Requested URL</th><td>&nbsp;&nbsp;&nbsp;http://localhost:80/Sites/1140-SHTML-Linked/Template-Content-Sitemap.shtml</td></tr> 
-    <tr><th>Physical Path</th><td>&nbsp;&nbsp;&nbsp;C:\inetpub\wwwroot\Sites\1140-SHTML-Linked\Template-Content-Sitemap.shtml</td></tr> 
-    <tr class="alt"><th>Logon Method</th><td>&nbsp;&nbsp;&nbsp;Anonymous</td></tr> 
-    <tr><th>Logon User</th><td>&nbsp;&nbsp;&nbsp;Anonymous</td></tr> 
-     
-   </table> 
-   <div class="clear"></div> 
-  </div> 
- </fieldset> 
-</div> 
- 
-<div class="content-container"> 
- <fieldset><h4>More Information:</h4> 
-  This error means that the file or directory does not exist on the server. Create the file or directory and try the request again. 
-  <p><a href="https://go.microsoft.com/fwlink/?LinkID=62293&amp;IIS70Error=404,0,0x80070002,19042">View more information &raquo;</a></p> 
-   
- </fieldset> 
-</div> 
-</div> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- SHTML Linked Master -->
+<head itemscope itemtype="http://schema.org/WebSite">
+<meta charset="UTF-8" />
+
+<!-- Title Description -->
+<title>Title</title>
+<meta name="description" content="Description" />
+
+<!-- Meta Data -->
+<meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Style Sheets -->
+<link rel='stylesheet'  href='style-main.css' type='text/css' media='all' />
+<link rel='stylesheet'  href='style-flex.css' type='text/css' media='all' />
+<link rel='stylesheet'  href='style-additions.css' type='text/css' media='all' />
+<link href="https://fonts.googleapis.com/css?family=Lora%7COswald" rel="stylesheet"> 
+
+</head>
+
+<body class="full-width-content" itemscope itemtype="http://schema.org/WebPage">
+
+<!-- Containers -->
+<div class="site-container">
+
+<!-- Header -->
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
+<div class="wrap">
+
+<!-- Site Title-->
+<div class="title-area">
+<!-- site-title -->
+<p class="site-title" itemprop="headline"><a href="index.html">Site Title</a>
+</div>
+
+<!-- Main Menu -->
+<nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="wrap">
+<!-- menu-main-nav -->
+<ul class="genesis-nav-menu">
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+</ul>
+</div>
+</nav>
+</div>
+
+</header>
+
+<!-- Wraps -->
+<div class="site-inner">
+<div class="wrap">
+
+<!-- Page Title -->
+<h1 class="site-description" itemprop="description">Site Map</h1>
+
+<!-- Content -->
+<div class="content-sidebar-wrap">
+<main class="content">
+
+<!-- Main Artilce -->
+<article class="entry" itemscope itemtype="http://schema.org/CreativeWork">
+<h2>A Set of Menu Items</h2>
+<div class="one-third first">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+<div class="one-third">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+<div class="one-third">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+</article>
+
+<article class="entry" itemscope itemtype="http://schema.org/CreativeWork">
+<h2>A Set of Menu Items</h2>
+<div class="one-third first">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+<div class="one-third">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+<div class="one-third">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+</article>
+
+<article class="entry" itemscope itemtype="http://schema.org/CreativeWork">
+<h2>A Set of Menu Items</h2>
+<div class="one-third first">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+<div class="one-third">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+<div class="one-third">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<div class="textwidget">
+<!-- menu-sitemap -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width-Wide.html" itemprop="url"><span itemprop="name">Full Width Wide</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Videos.html" itemprop="url"><span itemprop="name">Side Video</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+</article>
+
+</main>
+
+<!-- Sidebar Primary -->
+
+</div>
+
+<!-- Sidebar Secondary -->
+
+</div>
+</div>
+
+<!-- Footer Widgets-->
+<div class="footer-widgets">
+<div class="wrap">
+
+<!-- Widget -->
+<div class="footer-widgets-1 widget-area">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<!-- menu-footer-left -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Sidebar.html" itemprop="url"><span itemprop="name">Content Sidebar</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content.html" itemprop="url"><span itemprop="name">Sidebar Content</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Content-Sidebar.html" itemprop="url"><span itemprop="name">Side Content Side</span></a></li>
+</ul>
+</div>
+</section>
+</div>
+
+<!-- Widget -->
+<div class="footer-widgets-2 widget-area">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<!-- menu-footer-center -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Sidebar-Sidebar.html" itemprop="url"><span itemprop="name">Content Side Side</span></a></li>
+<li class="menu-item"><a href="Template-Sidebar-Sidebar-Content.html" itemprop="url"><span itemprop="name">Side Side Content</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+</ul>
+</div>
+</section>
+</div>
+
+<!-- Widget -->
+<div class="footer-widgets-3 widget-area">
+<section class="widget"  itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="custom-widget-wrap">
+<h4 class="widgettitle">Title</h4>
+<!-- menu-footer-right -->
+<ul>
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Content-Media.html" itemprop="url"><span itemprop="name">Content Media</span></a></li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<!-- Site Footer -->
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+<div class="wrap">
+<p>Copyright &#x000A9;&nbsp;2017 &#x000B7; <a href="#">Name</a> on <a href="#">Name</a> &#x000B7; <a href="#">Name</a> &#x000B7; <a href="#">Name</a></p>
+
+<nav class="nav-secondary" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<div class="wrap">
+<!-- menu-bottom -->
+<ul class="genesis-nav-menu">
+<li class="menu-item"><a href="Template-Content-Flex.html" itemprop="url"><span itemprop="name">Flex</span></a></li>
+<li class="menu-item"><a href="Template-Sitemap.html" itemprop="url"><span itemprop="name">Sitemap</span></a></li>
+<li class="menu-item"><a href="Template-Full-Width.html" itemprop="url"><span itemprop="name">Full Width</span></a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+
+<!-- SHTML Linked Master -->
+</html>
